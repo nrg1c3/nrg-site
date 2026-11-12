@@ -1,0 +1,49 @@
+/* الهوية البصرية الرسمية لـ NRG — المصدر: docs/BRIEF.md (تصميم «صفحات NRG و C3» المعتمد).
+   ممنوع استخدام ألوان أو قيم خارج الملف ده. */
+:root {
+  color-scheme: dark;
+
+  /* الألوان */
+  --c-bg: #0F1F27;          /* الخلفية — تيل غامق جدًا */
+  --c-surface: #16303A;     /* الكروت */
+  --c-border: #24434E;      /* حدود زخرفية */
+  --c-text: #F4F1EA;        /* النص — أوف وايت دافي */
+  --c-text-2: #B9C8CB;      /* نص ثانوي */
+  --c-teal: #4FA6AD;        /* حدود الحقول والتفاعل (تباين ≥ 3:1) */
+  --c-teal-2: #8FD3D8;      /* عناوين صغيرة ووسوم */
+  --c-accent: #F2A65A;      /* الأزرار والأرقام والتمييز */
+  --c-on-accent: #0F1F27;   /* النص فوق الـ Accent */
+
+  /* الخطوط */
+  --f-head: 'Cairo', system-ui, sans-serif;
+  --f-body: 'IBM Plex Sans Arabic', system-ui, sans-serif;
+
+  /* المقاسات */
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.375rem;
+  --fs-2xl: clamp(1.625rem, 1.2rem + 2vw, 2.25rem);
+  --fs-3xl: clamp(2rem, 1.3rem + 3.6vw, 3.5rem);
+
+  /* المسافات */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4.5rem;
+
+  /* الشكل */
+  --radius: 22px;
+  --radius-lg: 24px;
+  --radius-sm: 12px;
+  --radius-pill: 999px;
+  --line: 1px;
+  --ring-alpha: 18%;        /* شفافية دواير الخلفية */
+  --container: 72rem;
+  --gutter: 1rem;
+  --tap: 44px;
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# TODO(content): Sitemap بعد ربط الدومين
