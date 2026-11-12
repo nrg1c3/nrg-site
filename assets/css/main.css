@@ -225,6 +225,14 @@ body:has(.mbar) { padding-block-end: var(--mbar-h); }
 .foot ul { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); }
 .foot a { display: inline-flex; align-items: center; min-block-size: var(--tap); }
 
+/* ---------- صفحات النصوص (الخصوصية) ---------- */
+.prose { max-inline-size: 46rem; }
+.prose h1 { font-size: var(--fs-2xl); }
+.prose h2 { font-size: var(--fs-xl); margin-block-start: var(--s-6); }
+.prose .feat { margin-block-end: var(--s-4); }
+.prose .btn-row { margin-block-start: var(--s-6); }
+.consent a { display: inline-flex; align-items: center; min-block-size: var(--tap); font-size: var(--fs-sm); }
+
 /* ---------- 404 ---------- */
 .notfound { min-block-size: 70vh; display: grid; place-content: center; text-align: center; gap: var(--s-4); }
 .notfound .big { font: 800 5rem/1 var(--f-head); color: var(--c-accent); }
