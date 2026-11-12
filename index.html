@@ -23,6 +23,18 @@
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-.9-.8.8a4 4 0 0 1-2.4-2.4l.8-.8-.9-2z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-join" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M19 8v6M16 11h6"/></symbol>
+    <symbol id="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 8.5v7l5.5-3.5z"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3L3 10.5l7 3 3 7z"/><path d="M10 13.5L21 3"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></symbol>
+  </defs>
+</svg>
 <a class="skip" href="#main">انتقل إلى المحتوى</a>
 
 <header class="site-header">
@@ -39,9 +51,9 @@
       <a href="#contact">تواصل</a>
     </nav>
     <div class="bar-actions">
-      <a class="lang" href="en/" hreflang="en" lang="en" aria-label="English version">EN</a>
-      <a class="btn btn-primary" href="https://wa.me/201508917780" rel="noopener" target="_blank" aria-label="واتساب (يفتح في نافذة جديدة)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-.9-.8.8a4 4 0 0 1-2.4-2.4l.8-.8-.9-2z"/></svg>
+      <a class="lang" href="en/" hreflang="en" lang="en" aria-label="English version"><svg aria-hidden="true"><use href="#i-globe"/></svg>EN</a>
+      <a class="btn btn-primary hdr-wa" href="https://wa.me/201508917780" rel="noopener" target="_blank" aria-label="واتساب (يفتح في نافذة جديدة)">
+        <svg aria-hidden="true"><use href="#i-wa"/></svg>
         <span>واتساب</span>
       </a>
       <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="القائمة">
@@ -61,13 +73,13 @@
       <h1>نبني <em>تطبيقات وأتمتة ومساعدين أذكياء</em> بالعربي</h1>
       <p class="lead">ماذا نبني؟ ثلاثة أشياء:</p>
       <ol class="three">
-        <li class="reveal"><span class="num">1</span><strong>تطبيقات للناس</strong><span>وَصْل للصم، وسايفو لأصحاب الـ&nbsp;ADHD</span></li>
+        <li class="reveal"><span class="num">1</span><strong>تطبيقات للناس</strong><span>وَصْل للصم وضعاف السمع، وسايفو لأصحاب الـ&nbsp;ADHD</span></li>
         <li class="reveal"><span class="num">2</span><strong>تطبيقات للشركات</strong><span>تطبيق باسم شركتك ولعملائك</span></li>
         <li class="reveal"><span class="num">3</span><strong>أتمتة ومساعدون أذكياء</strong><span>عمل روتيني أقل، ووقت أكثر للمهم</span></li>
       </ol>
       <div class="btn-row">
-        <a class="btn btn-primary" href="#contact">تواصل معنا</a>
-        <a class="btn btn-ghost" href="#projects">شاهد مشاريعنا</a>
+        <a class="btn btn-primary" href="#contact"><svg aria-hidden="true"><use href="#i-chat"/></svg>تواصل معنا</a>
+        <a class="btn btn-ghost" href="#projects"><svg aria-hidden="true"><use href="#i-grid"/></svg>شاهد مشاريعنا</a>
       </div>
     </div>
   </section>
@@ -102,32 +114,66 @@
 
       <div class="projects">
 
-        <!-- وَصْل — ممنوع: «بيترجم لغة الإشارة» -->
-        <article class="card project reveal" aria-labelledby="p-wasl">
+        <!-- وَصْل — المصدر: docs/inputs/wasl/SITE-CARD.md (يكسب عند التعارض) + BRIEF. ممنوع «بيترجم لغة الإشارة». «100 مجرّب» هدف مش عدد مستخدمين. -->
+        <article class="card project project-wide reveal" aria-labelledby="p-wasl">
           <div class="project-head">
             <h3 id="p-wasl">وَصْل <span class="en" lang="en">Wasl</span></h3>
             <span class="tag">تجريبي</span>
           </div>
-          <p class="sub">تطبيق عربي مجاني للصم وضعاف السمع</p>
-          <p>وَصْل يتكلم نيابةً عنك: تكتب ما تريد فيقوله بصوت واضح، ويظهر لك كلام من أمامك مكتوبًا ومعه صور بسيطة. في الصيدلية، وعند الطبيب والكاشير والبنك، وفي المواصلات والمصالح الحكومية.</p>
-          <ul class="feat">
-            <li><strong>«اتكلم بدالي»:</strong> مساعد ذكي يُنهي المهمة بالكلام مع السامع، ويرجع إليك في أي قرار، ولا يوافق على شيء دون اختيارك.</li>
-            <li><strong>الصيدلية على واتساب:</strong> اطلب الدواء، وتتحول الرسائل الصوتية إلى كلام مكتوب في بطاقات (السعر وميعاد التوصيل)، مع تنبيه إن كان البديل يحتوي على شيء لديك حساسية منه.</li>
-            <li><strong>«وَصْل في المكان»:</strong> رمز QR على موبايلك يمسحه الموظف، فتتحدثان كتابةً على شاشة واحدة.</li>
-            <li>مكالمات بالنيابة عنك، وزر طوارئ، وتنبيهات الأصوات، وتذكير بالدواء، و«وضع الصور» لمن قراءته ضعيفة.</li>
+          <p class="tagline">«احنا مش مترجم، احنا بنخلّص المصلحة.»</p>
+          <p class="sub">تطبيق ويب مجاني للصم وضعاف السمع</p>
+          <p>وَصْل تطبيق ويب مجاني للصم وضعاف السمع في مصر، يفتح من متصفح الهاتف دون تحميل. يتكلم بالنيابة عن المستخدم بصوت مصري واضح، ويعرض كلام الطرف الآخر مكتوبًا ومعه صور بسيطة. يعمل في الصيدلية وعند الطبيب وأمام الكاشير وعلى واتساب، وكل قرار فيه مال أو صحة يرجع للمستخدم.</p>
+          <div class="shots-wrap">
+            <div class="shots" role="region" aria-label="صور حقيقية من تطبيق وَصْل" tabindex="0">
+              <figure>
+                <img src="assets/img/wasl/home-390.webp" srcset="assets/img/wasl/home-390.webp 390w, assets/img/wasl/home-780.webp 780w" sizes="(min-width: 64rem) 12rem, 9.5rem" width="390" height="844" loading="lazy" decoding="async" alt="الشاشة الرئيسية لوَصْل: أزرار كبيرة بالصور للصيدلية والكاشير وحجز دكتور والبنك والمواصلات، وزر «وصل في المكان»، وزر طوارئ أحمر.">
+                <figcaption>الشاشة الرئيسية في وضع الصور</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/img/wasl/pharmacy-390.webp" srcset="assets/img/wasl/pharmacy-390.webp 390w, assets/img/wasl/pharmacy-780.webp 780w" sizes="(min-width: 64rem) 12rem, 9.5rem" width="390" height="844" loading="lazy" decoding="async" alt="محادثة في الصيدلية: الصيدلي يقول إن الدواء موجود، ووَصْل يسأل المستخدم لأن فيه بنسلين وعنده حساسية منه، مع اختيارين: «أيوه، أسأله على بديل» و«لأ، خده».">
+                <figcaption>في الصيدلية: وَصْل يسألك قبل دواء فيه بنسلين</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/img/wasl/counter-qr-390.webp" srcset="assets/img/wasl/counter-qr-390.webp 390w, assets/img/wasl/counter-qr-780.webp 780w" sizes="(min-width: 64rem) 12rem, 9.5rem" width="390" height="844" loading="lazy" decoding="async" alt="شاشة «وصل في المكان»: اختيارات بالصور لما يريده العميل، ورمز QR يمسحه الموظف بهاتفه.">
+                <figcaption>وصل في المكان: شاشة الكود</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/img/wasl/counter-chat-390.webp" srcset="assets/img/wasl/counter-chat-390.webp 390w, assets/img/wasl/counter-chat-780.webp 780w" sizes="(min-width: 64rem) 12rem, 9.5rem" width="390" height="844" loading="lazy" decoding="async" alt="محادثة «وصل في المكان»: كلام الموظف مكتوب بخط كبير، وتحته ردود سريعة بالصور مثل «أيوه» و«لأ» و«بكام؟» وخانة للكتابة.">
+                <figcaption>وصل في المكان: المحادثة مع الموظف</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/img/wasl/sos-390.webp" srcset="assets/img/wasl/sos-390.webp 390w, assets/img/wasl/sos-780.webp 780w" sizes="(min-width: 64rem) 12rem, 9.5rem" width="390" height="844" loading="lazy" decoding="async" alt="شاشة الطوارئ: أزرار كبيرة بالصور لتعبان ومحتاج إسعاف، وحادثة، وحريق، وحرامي أو خطر، وريحة غاز أو كهربا، وتهت.">
+                <figcaption>شاشة الطوارئ</figcaption>
+              </figure>
+            </div>
+            <p class="shots-hint" aria-hidden="true">اسحب لرؤية باقي الصور</p>
+          </div>
+          <ul class="feat feat-cols">
+            <li><strong>وجهًا لوجه:</strong> تكتب أو تختار بالصور ما تريده، ووَصْل يقوله بصوت للشخص السامع. وكلامه يظهر لك مكتوبًا ومعه كروت (السعر، موجود أم لا، الجرعة).</li>
+            <li><strong>قراءة صورة:</strong> صوّر الروشتة أو أي ورقة ليقرأها وَصْل.</li>
+            <li><strong>الأمان:</strong> يراجع حساسية الأدوية المحفوظة قبل أي طلب دواء، وأي قرار فيه مال أو صحة يُعرض عليك باختيارات واضحة.</li>
+            <li><strong>دواء على واتساب:</strong> يكتب طلب الدواء لترسله من واتساب الخاص بك، ويحوّل رد الصيدلية الصوتي إلى نص وكروت.</li>
+            <li><strong>«وصل في المكان»:</strong> ملصقا QR لكل فرع: واحد للعميل وواحد لهاتف الفرع. تختار طلبك بالصور، فيرنّ هاتف الفرع ويهتز ويفتح المحادثة. وفيه وضع «هاتف واحد» إن لم يكن مع الموظف هاتف.</li>
+            <li><strong>طوارئ:</strong> صفارة وكشاف لتنبيه من حولك، وإرسال مكانك للأهل، وجمل جاهزة للإسعاف والشرطة.</li>
+            <li><strong>تنبيهات الأصوات:</strong> يهتز الهاتف عند جرس الباب أو بكاء طفل أو إنذار حريق.</li>
+            <li><strong>وضع الصور:</strong> أيقونات كبيرة وكلام قليل لمن قراءته محدودة.</li>
+            <li><strong>إشارة:</strong> تعلّم وَصْل إشاراتك الخاصة، والتعرّف يتم على هاتفك. ونعمل على مكتبة لغة الإشارة المصرية، وما زالت تُصوَّر وتُراجَع.</li>
+            <li><strong>«مكالمة (تجريبي)»:</strong> وَصْل يتصل بدلًا منك، وتقرأ المكالمة مكتوبة وتجيب من هاتفك. تجريبية وغير مفتوحة للناس.</li>
           </ul>
           <ul class="facts" aria-label="معلومات">
-            <li>يعمل من متصفح الموبايل دون تحميل</li>
+            <li>يفتح من متصفح الهاتف دون تحميل</li>
             <li>مصري وخليجي وإنجليزي</li>
-            <li>بياناتك على موبايلك</li>
+            <li>دون حساب، وبياناتك على هاتفك</li>
             <li>بلا إعلانات ولا بيع للبيانات</li>
+            <li>العرض التجريبي يعمل دون إنترنت بعد أول فتح</li>
           </ul>
-          <p class="muted">مجاني للصم (30 مهمة في الشهر لكل موبايل)، وللشركات باقات. نبحث الآن عن 100 مجرّب.</p>
-          <p class="note"><strong>للشركات:</strong> القانون 10 لسنة 2018 يُلزم كل شركة بها 20 موظفًا أو أكثر بتشغيل 5% على الأقل من ذوي الإعاقة. وَصْل يساعد الموظف الأصم على العمل والإنتاج، ويساعد الشركة على خدمة عملائها الصم دون مترجم.</p>
+          <p class="muted">مجاني للصم: <bdi dir="ltr">30</bdi> مهمة في الشهر لكل هاتف، وللشركات باقات. نحتاج <bdi dir="ltr">100</bdi> مجرّب في التجربة.</p>
+          <p class="note"><strong>للشركات:</strong> القانون <bdi dir="ltr">10</bdi> لسنة <bdi dir="ltr">2018</bdi> يُلزم كل شركة بها <bdi dir="ltr">20</bdi> موظفًا أو أكثر بتشغيل <bdi dir="ltr">5%</bdi> على الأقل من ذوي الإعاقة. وَصْل يساعد الموظف الأصم على العمل والإنتاج، ويساعد الشركة على خدمة عملائها الصم دون مترجم.</p>
+          <!-- TODO(content): وَصْل — تاريخ بداية التجربة، عدد المسجلين بمصدر، الشركاء/أماكن «وصل في المكان» المسموح بذكرها، الجوائز، شعار SVG، صورة شاشة المكالمة (راجع docs/CONTENT-TODO.md) -->
           <div class="btn-row">
-            <a class="btn btn-primary" href="https://nrg1c3.github.io/wasl/join.html" rel="noopener">سجّل كمجرّب</a>
-            <a class="btn btn-ghost" href="https://nrg1c3.github.io/wasl/" rel="noopener">جرّب التطبيق</a>
-            <a class="btn btn-ghost" href="https://nrg1c3.github.io/wasl/site/" rel="noopener">عن وَصْل</a>
+            <a class="btn btn-primary" href="https://wasl.nrg-egypt.com/join.html" rel="noopener"><svg aria-hidden="true"><use href="#i-join"/></svg>سجّل كمجرّب</a>
+            <a class="btn btn-ghost" href="https://wasl.nrg-egypt.com" rel="noopener"><svg aria-hidden="true"><use href="#i-open"/></svg>افتح وَصْل</a>
+            <a class="btn btn-ghost" href="https://wasl.nrg-egypt.com/?demo" rel="noopener"><svg aria-hidden="true"><use href="#i-play"/></svg>جرّب العرض التجريبي</a>
           </div>
         </article>
 
@@ -153,7 +199,7 @@
           </ul>
           <p class="note"><strong>مهم:</strong> سايفو ليس طبيبًا ولا علاجًا؛ هو أدوات للتنظيم والتركيز، وليس تشخيصًا.</p>
           <div class="btn-row">
-            <a class="btn btn-primary" href="https://getsayvo.com" rel="noopener">موقع سايفو</a>
+            <a class="btn btn-primary" href="https://getsayvo.com" rel="noopener"><svg aria-hidden="true"><use href="#i-open"/></svg>موقع سايفو</a>
           </div>
         </article>
 
@@ -292,15 +338,20 @@
             <label for="f-website">اترك هذا الحقل فارغًا</label>
             <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
           </div>
+          <div class="field consent">
+            <label><input id="f-consent" name="consent" type="checkbox" required> أوافق على أن تستخدم NRG اسمي ورقمي للرد على طلبي.</label>
+            <!-- TODO(content): صفحة سياسة الخصوصية -->
+            <span class="missing">[ناقص: رابط سياسة الخصوصية]</span>
+          </div>
           <noscript><p class="note">الإرسال من هنا يحتاج JavaScript. راسلنا على واتساب بدلًا من ذلك.</p></noscript>
-          <button class="btn btn-primary" type="submit">أرسل</button>
+          <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-send"/></svg>أرسل</button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
 
         <div class="card wa-card">
           <h3>واتساب</h3>
-          <a class="wa-num ltr" href="https://wa.me/201508917780" rel="noopener" target="_blank">01508917780</a>
-          <a class="btn btn-ghost" href="https://wa.me/201508917780" rel="noopener" target="_blank">ابدأ محادثة على واتساب</a>
+          <a class="wa-num" href="https://wa.me/201508917780" rel="noopener" target="_blank"><bdi dir="ltr">01508917780</bdi></a>
+          <a class="btn btn-ghost" href="https://wa.me/201508917780" rel="noopener" target="_blank"><svg aria-hidden="true"><use href="#i-wa"/></svg>ابدأ محادثة على واتساب</a>
         </div>
       </div>
     </div>
@@ -319,5 +370,10 @@
     </ul>
   </div>
 </footer>
+
+<nav class="mbar" aria-label="تواصل سريع">
+  <a class="btn btn-primary" href="https://wa.me/201508917780" rel="noopener" target="_blank"><svg aria-hidden="true"><use href="#i-wa"/></svg>واتساب</a>
+  <a class="btn btn-ghost" href="#contact"><svg aria-hidden="true"><use href="#i-chat"/></svg>اكتب لنا</a>
+</nav>
 </body>
 </html>

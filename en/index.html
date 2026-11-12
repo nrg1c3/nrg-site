@@ -23,6 +23,18 @@
   <script src="../assets/js/main.js" defer></script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-.9-.8.8a4 4 0 0 1-2.4-2.4l.8-.8-.9-2z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-join" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M19 8v6M16 11h6"/></symbol>
+    <symbol id="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 8.5v7l5.5-3.5z"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3L3 10.5l7 3 3 7z"/><path d="M10 13.5L21 3"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></symbol>
+  </defs>
+</svg>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site-header">
@@ -38,9 +50,9 @@
       <a href="#contact">Contact</a>
     </nav>
     <div class="bar-actions">
-      <a class="lang" href="../" hreflang="ar" lang="ar" aria-label="النسخة العربية">ع</a>
-      <a class="btn btn-primary" href="https://wa.me/201508917780" rel="noopener" target="_blank" aria-label="WhatsApp (opens in a new window)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-.9-.8.8a4 4 0 0 1-2.4-2.4l.8-.8-.9-2z"/></svg>
+      <a class="lang" href="../" hreflang="ar" lang="ar" aria-label="النسخة العربية"><svg aria-hidden="true"><use href="#i-globe"/></svg>ع</a>
+      <a class="btn btn-primary hdr-wa" href="https://wa.me/201508917780" rel="noopener" target="_blank" aria-label="WhatsApp (opens in a new window)">
+        <svg aria-hidden="true"><use href="#i-wa"/></svg>
         <span>WhatsApp</span>
       </a>
       <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu">
@@ -59,13 +71,13 @@
       <h1>We build <em>apps, automation and smart assistants</em> in Arabic</h1>
       <p class="lead">What do we build? Three things:</p>
       <ol class="three">
-        <li class="reveal"><span class="num">1</span><strong>Apps for people</strong><span>Wasl for Deaf people, and Sayvo for people with ADHD</span></li>
+        <li class="reveal"><span class="num">1</span><strong>Apps for people</strong><span>Wasl for Deaf and hard-of-hearing people, and Sayvo for people with ADHD</span></li>
         <li class="reveal"><span class="num">2</span><strong>Apps for businesses</strong><span>An app with your company’s name, for your customers</span></li>
         <li class="reveal"><span class="num">3</span><strong>Automation &amp; smart assistants</strong><span>Less routine work, more time for what matters</span></li>
       </ol>
       <div class="btn-row">
-        <a class="btn btn-primary" href="#contact">Contact us</a>
-        <a class="btn btn-ghost" href="#projects">See our projects</a>
+        <a class="btn btn-primary" href="#contact"><svg aria-hidden="true"><use href="#i-chat"/></svg>Contact us</a>
+        <a class="btn btn-ghost" href="#projects"><svg aria-hidden="true"><use href="#i-grid"/></svg>See our projects</a>
       </div>
     </div>
   </section>
@@ -98,32 +110,66 @@
 
       <div class="projects">
 
-        <!-- Wasl — never say it "translates sign language" -->
-        <article class="card project reveal" aria-labelledby="p-wasl">
+        <!-- Wasl — source: docs/inputs/wasl/SITE-CARD.md (wins on conflict) + BRIEF. Never "translates sign language". "100 testers" is a goal, not a user count. -->
+        <article class="card project project-wide reveal" aria-labelledby="p-wasl">
           <div class="project-head">
             <h3 id="p-wasl">Wasl <span class="en" lang="ar">وَصْل</span></h3>
             <span class="tag">Pilot</span>
           </div>
-          <p class="sub">A free Arabic app for Deaf and hard-of-hearing people</p>
-          <p>Wasl speaks for you: you type what you want and it says it in a clear voice, and what the other person says appears to you as text with simple pictures. At the pharmacy, the doctor, the cashier, the bank, on transport and at government offices.</p>
-          <ul class="feat">
-            <li><strong>“Speak for me”:</strong> a smart assistant that finishes the task by talking to the hearing person, and comes back to you for any decision. It never agrees to anything without your choice.</li>
-            <li><strong>Pharmacy on WhatsApp:</strong> order medicine, and voice messages turn into text cards (price, delivery time), with a warning if a substitute contains something you are allergic to.</li>
-            <li><strong>“Wasl in place”:</strong> a QR code on your phone that staff scan, so you both chat in text on one screen.</li>
-            <li>Calls on your behalf, an emergency button, sound alerts, medicine reminders, and “picture mode” for people who find reading hard.</li>
+          <p class="tagline">“Not a translator. Wasl gets the errand done.”</p>
+          <p class="sub">A free web app for Deaf and hard-of-hearing people</p>
+          <p>Wasl is a free web app for Deaf and hard-of-hearing people in Egypt. It opens in the phone’s browser, with nothing to install. It speaks for the user in clear Egyptian Arabic and shows the other person’s words as text with simple picture cards. It works at the pharmacy, the clinic, a branch counter and on WhatsApp, and every money or health decision goes back to the user.</p>
+          <div class="shots-wrap">
+            <div class="shots" role="region" aria-label="Real screenshots from the Wasl app (Arabic interface)" tabindex="0">
+              <figure>
+                <img src="../assets/img/wasl/home-390.webp" srcset="../assets/img/wasl/home-390.webp 390w, ../assets/img/wasl/home-780.webp 780w" sizes="(min-width: 64rem) 12rem, 9.5rem" width="390" height="844" loading="lazy" decoding="async" alt="Wasl home screen in Arabic: large picture buttons for pharmacy, cashier, doctor’s appointment, bank and transport, a “Wasl in place” button, and a red emergency button.">
+                <figcaption>Home screen in picture mode</figcaption>
+              </figure>
+              <figure>
+                <img src="../assets/img/wasl/pharmacy-390.webp" srcset="../assets/img/wasl/pharmacy-390.webp 390w, ../assets/img/wasl/pharmacy-780.webp 780w" sizes="(min-width: 64rem) 12rem, 9.5rem" width="390" height="844" loading="lazy" decoding="async" alt="Pharmacy chat in Arabic: the pharmacist says the medicine is available, and Wasl asks the user because it contains penicillin, which they are allergic to, with two choices: “Yes, ask for a substitute” and “No, take it”.">
+                <figcaption>At the pharmacy: Wasl asks before a medicine with penicillin</figcaption>
+              </figure>
+              <figure>
+                <img src="../assets/img/wasl/counter-qr-390.webp" srcset="../assets/img/wasl/counter-qr-390.webp 390w, ../assets/img/wasl/counter-qr-780.webp 780w" sizes="(min-width: 64rem) 12rem, 9.5rem" width="390" height="844" loading="lazy" decoding="async" alt="“Wasl in place” screen in Arabic: picture choices for what the customer needs, and a QR code the staff member scans with their phone.">
+                <figcaption>Wasl in place: the code screen</figcaption>
+              </figure>
+              <figure>
+                <img src="../assets/img/wasl/counter-chat-390.webp" srcset="../assets/img/wasl/counter-chat-390.webp 390w, ../assets/img/wasl/counter-chat-780.webp 780w" sizes="(min-width: 64rem) 12rem, 9.5rem" width="390" height="844" loading="lazy" decoding="async" alt="“Wasl in place” chat in Arabic: the staff member’s words in large text, with quick picture replies such as “Yes”, “No” and “How much?” and a text box.">
+                <figcaption>Wasl in place: chatting with staff</figcaption>
+              </figure>
+              <figure>
+                <img src="../assets/img/wasl/sos-390.webp" srcset="../assets/img/wasl/sos-390.webp 390w, ../assets/img/wasl/sos-780.webp 780w" sizes="(min-width: 64rem) 12rem, 9.5rem" width="390" height="844" loading="lazy" decoding="async" alt="Emergency screen in Arabic: large picture buttons for feeling ill and needing an ambulance, accident, fire, thief or danger, gas or electrical smell, and being lost.">
+                <figcaption>Emergency screen</figcaption>
+              </figure>
+            </div>
+            <p class="shots-hint" aria-hidden="true">Swipe to see more screens</p>
+          </div>
+          <ul class="feat feat-cols">
+            <li><strong>Face to face:</strong> type or pick in pictures what you want, and Wasl says it aloud to the hearing person. Their words appear to you as text with cards (price, in stock or not, dose).</li>
+            <li><strong>Read a photo:</strong> snap a prescription or any paper for Wasl to read.</li>
+            <li><strong>Safety:</strong> checks your saved medicine allergies before any medicine order, and any money or health decision is shown to you as clear choices.</li>
+            <li><strong>Medicine on WhatsApp:</strong> writes the medicine order for you to send from your own WhatsApp, and turns the pharmacy’s voice reply into text and cards.</li>
+            <li><strong>“Wasl in place”:</strong> two QR stickers per branch — one for the customer, one for the branch phone. You pick your request in pictures, and the branch phone rings, vibrates and opens the chat. There is a “one phone” mode if the staff member has no phone.</li>
+            <li><strong>Emergency:</strong> a siren and flashlight to alert people around you, sending your location to family, and ready phrases for ambulance and police.</li>
+            <li><strong>Sound alerts:</strong> the phone vibrates for a doorbell, a crying baby or a fire alarm.</li>
+            <li><strong>Picture mode:</strong> large icons and few words for people with limited reading.</li>
+            <li><strong>Signs:</strong> teach Wasl your own signs, recognised on your phone. We are working on an Egyptian Sign Language library, still being filmed and reviewed.</li>
+            <li><strong>“Call (pilot)”:</strong> Wasl calls on your behalf, and you read the call as text and answer from your phone. It is a pilot and not open to the public.</li>
           </ul>
           <ul class="facts" aria-label="Details">
-            <li>Works in the phone browser, no download</li>
+            <li>Opens in the phone browser, no download</li>
             <li>Egyptian, Gulf and English</li>
-            <li>Your data stays on your phone</li>
+            <li>No account — your data stays on your phone</li>
             <li>No ads, no selling data</li>
+            <li>The demo works offline after the first visit</li>
           </ul>
-          <p class="muted">Free for Deaf users (30 tasks a month per phone); plans for businesses. We are now looking for 100 testers.</p>
+          <p class="muted">Free for Deaf users: <bdi>30</bdi> tasks a month per phone; plans for businesses. We need <bdi>100</bdi> testers for the pilot.</p>
           <p class="note"><strong>For businesses:</strong> Egypt’s Law 10 of 2018 requires every company with 20 or more employees to employ at least 5% people with disabilities. Wasl helps Deaf employees work and be productive, and helps companies serve Deaf customers without an interpreter.</p>
+          <!-- TODO(content): Wasl — pilot start date, sign-up count with source, partners/"Wasl in place" locations allowed to be named, awards, SVG logo, call screen screenshot (see docs/CONTENT-TODO.md) -->
           <div class="btn-row">
-            <a class="btn btn-primary" href="https://nrg1c3.github.io/wasl/join.html" rel="noopener">Join as a tester</a>
-            <a class="btn btn-ghost" href="https://nrg1c3.github.io/wasl/" rel="noopener">Try the app</a>
-            <a class="btn btn-ghost" href="https://nrg1c3.github.io/wasl/site/" rel="noopener">About Wasl</a>
+            <a class="btn btn-primary" href="https://wasl.nrg-egypt.com/join.html" rel="noopener"><svg aria-hidden="true"><use href="#i-join"/></svg>Join as a tester</a>
+            <a class="btn btn-ghost" href="https://wasl.nrg-egypt.com" rel="noopener"><svg aria-hidden="true"><use href="#i-open"/></svg>Open Wasl</a>
+            <a class="btn btn-ghost" href="https://wasl.nrg-egypt.com/?demo" rel="noopener"><svg aria-hidden="true"><use href="#i-play"/></svg>Try the demo</a>
           </div>
         </article>
 
@@ -149,7 +195,7 @@
           </ul>
           <p class="note"><strong>Important:</strong> Sayvo is not a doctor or a treatment. It offers organisation and focus tools, not a diagnosis.</p>
           <div class="btn-row">
-            <a class="btn btn-primary" href="https://getsayvo.com" rel="noopener">Sayvo website</a>
+            <a class="btn btn-primary" href="https://getsayvo.com" rel="noopener"><svg aria-hidden="true"><use href="#i-open"/></svg>Sayvo website</a>
           </div>
         </article>
 
@@ -285,15 +331,20 @@
             <label for="f-website">Leave this field empty</label>
             <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
           </div>
+          <div class="field consent">
+            <label><input id="f-consent" name="consent" type="checkbox" required> I agree that NRG may use my name and number to reply to my request.</label>
+            <!-- TODO(content): privacy policy page -->
+            <span class="missing">[Missing: privacy policy link]</span>
+          </div>
           <noscript><p class="note">Sending from here needs JavaScript. Please message us on WhatsApp instead.</p></noscript>
-          <button class="btn btn-primary" type="submit">Send</button>
+          <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-send"/></svg>Send</button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
 
         <div class="card wa-card">
           <h3>WhatsApp</h3>
-          <a class="wa-num ltr" href="https://wa.me/201508917780" rel="noopener" target="_blank">01508917780</a>
-          <a class="btn btn-ghost" href="https://wa.me/201508917780" rel="noopener" target="_blank">Start a WhatsApp chat</a>
+          <a class="wa-num" href="https://wa.me/201508917780" rel="noopener" target="_blank"><bdi dir="ltr">01508917780</bdi></a>
+          <a class="btn btn-ghost" href="https://wa.me/201508917780" rel="noopener" target="_blank"><svg aria-hidden="true"><use href="#i-wa"/></svg>Start a WhatsApp chat</a>
         </div>
       </div>
     </div>
@@ -312,5 +363,10 @@
     </ul>
   </div>
 </footer>
+
+<nav class="mbar" aria-label="Quick contact">
+  <a class="btn btn-primary" href="https://wa.me/201508917780" rel="noopener" target="_blank"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+  <a class="btn btn-ghost" href="#contact"><svg aria-hidden="true"><use href="#i-chat"/></svg>Write to us</a>
+</nav>
 </body>
 </html>

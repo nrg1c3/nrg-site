@@ -45,5 +45,7 @@
   --ring-alpha: 18%;        /* شفافية دواير الخلفية */
   --container: 72rem;
   --gutter: 1rem;
-  --tap: 44px;
+  --tap: 48px;             /* أقل هدف لمس — docs/A11Y-CHECKLIST.md */
+  --mbar-h: 4.5rem;         /* شريط التواصل السفلي على الموبايل */
+  --shot-w: 9.5rem;         /* عرض صورة الشاشة على الموبايل */
 }
