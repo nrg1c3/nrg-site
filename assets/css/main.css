@@ -52,7 +52,7 @@ bdi { unicode-bidi: isolate; }
   border-block-end: var(--line) solid var(--c-border);
 }
 .bar { display: flex; align-items: center; gap: var(--s-3); min-height: 4rem; }
-.brand { display: inline-flex; align-items: center; min-block-size: var(--tap); gap: var(--s-2); color: var(--c-text); text-decoration: none; font: 800 var(--fs-lg)/1 var(--f-head); }
+.brand { display: inline-flex; align-items: center; min-inline-size: var(--tap); min-block-size: var(--tap); gap: var(--s-2); color: var(--c-text); text-decoration: none; font: 800 var(--fs-lg)/1 var(--f-head); }
 .logo {
   display: inline-grid; place-items: center; inline-size: 2.5rem; block-size: 2.5rem;
   border-radius: var(--radius-sm); background: var(--c-accent); color: var(--c-on-accent);
@@ -223,7 +223,7 @@ body:has(.mbar) { padding-block-end: var(--mbar-h); }
 .site-footer { border-block-start: var(--line) solid var(--c-border); padding-block: var(--s-6); color: var(--c-text-2); font-size: var(--fs-sm); }
 .foot { display: flex; flex-wrap: wrap; gap: var(--s-3) var(--s-5); align-items: center; justify-content: space-between; }
 .foot ul { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); }
-.foot a { display: inline-flex; align-items: center; min-block-size: var(--tap); }
+.foot a { display: inline-flex; align-items: center; justify-content: center; min-inline-size: var(--tap); min-block-size: var(--tap); }
 
 /* ---------- صفحات النصوص (الخصوصية) ---------- */
 .prose { max-inline-size: 46rem; }
@@ -231,7 +231,7 @@ body:has(.mbar) { padding-block-end: var(--mbar-h); }
 .prose h2 { font-size: var(--fs-xl); margin-block-start: var(--s-6); }
 .prose .feat { margin-block-end: var(--s-4); }
 .prose .btn-row { margin-block-start: var(--s-6); }
-.consent a { display: inline-flex; align-items: center; min-block-size: var(--tap); font-size: var(--fs-sm); }
+.consent a { display: inline-flex; align-items: center; min-inline-size: var(--tap); min-block-size: var(--tap); font-size: var(--fs-sm); }
 
 /* ---------- 404 ---------- */
 .notfound { min-block-size: 70vh; display: grid; place-content: center; text-align: center; gap: var(--s-4); }
