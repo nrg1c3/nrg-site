@@ -154,6 +154,7 @@ section { padding-block: var(--s-7); }
 }
 .note strong { color: var(--c-text); }
 .project .btn-row { margin-block-start: auto; padding-block-start: var(--s-2); }
+.proj-logo { inline-size: 3rem; block-size: 3rem; border-radius: var(--radius-sm); flex: none; }
 .tagline { font: 800 var(--fs-xl)/1.45 var(--f-head); color: var(--c-accent); margin: 0; }
 
 /* صور شاشات وَصْل — سحب أفقي جوه الكارت بس (الصفحة نفسها من غير scroll بالعرض) */
@@ -276,7 +277,7 @@ body:has(.mbar) { padding-block-end: var(--mbar-h); }
   .nav, .nav.open { display: flex; position: static; gap: var(--s-1); padding: 0; border: 0; background: none; margin-inline-start: var(--s-5); }
   .nav a { padding-inline: var(--s-3); }
   .services { grid-template-columns: repeat(4, 1fr); }
-  .shots { display: grid; grid-template-columns: repeat(5, 1fr); overflow: visible; }
+  .shots { display: grid; grid-template-columns: repeat(6, 1fr); overflow: visible; }
   .shots-hint { display: none; }
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-7); align-items: start; }
 }
