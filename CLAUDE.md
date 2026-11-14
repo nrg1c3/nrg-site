@@ -31,7 +31,7 @@
 - CSS بالخصائص المنطقية (`margin-inline-start`, `padding-inline`, `inset-inline-end`…) مش left/right، عشان نفس الملف يشتغل في الاتجاهين.
 
 ## التقنية
-- موقع **ثابت** لـ GitHub Pages: HTML + CSS + JS خفيف جدًا. **بدون build step وبدون frameworks** إلا بموافقة.
+- موقع **ثابت** لـ GitHub Pages (قرار الاستضافة النهائي، 14 نوفمبر 2026): HTML + CSS + JS خفيف جدًا. **بدون build step وبدون frameworks** إلا بموافقة.
 - بدون أي سكربتات أو تتبع (analytics/pixels) من طرف تالت إلا بموافقة.
 - الخطوط مستضافة محليًا داخل `assets/fonts/` (woff2).
 - `.nojekyll` في الجذر. ملف `CNAME` بـ `nrg-egypt.com` **ما يتضافش** غير لما المستخدم يقول إن الدومين جاهز.
