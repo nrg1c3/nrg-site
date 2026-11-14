@@ -313,7 +313,7 @@
         <form id="contact-form" class="card form" data-endpoint="https://api.nrg-egypt.com/webhook/site-contact" novalidate>
           <div class="field">
             <label for="f-name">الاسم</label>
-            <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="100">
+            <input id="f-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="80">
           </div>
           <div class="field">
             <label for="f-phone">رقم الموبايل</label>
@@ -326,13 +326,13 @@
               <option value="شراكة">شراكة</option>
               <option value="تطبيق لشركتي">تطبيق لشركتي</option>
               <option value="أتمتة / مساعد ذكي">أتمتة / مساعد ذكي</option>
-              <option value="تجربة وَصْل أو سايفو">تجربة بَدَالَك أو سايفو</option> <!-- القيمة دي بتتبعت للسيرفر بالاسم القديم لحد ما السيرفر يتأكد إنه بيقبل الجديد — docs/CONTENT-TODO.md -->
+              <option value="تجربة بَدَالَك أو سايفو">تجربة بَدَالَك أو سايفو</option>
               <option value="غيره">غير ذلك</option>
             </select>
           </div>
           <div class="field">
             <label for="f-msg">رسالتك <span class="opt">(اختياري)</span></label>
-            <textarea id="f-msg" name="message" maxlength="2000"></textarea>
+            <textarea id="f-msg" name="message" maxlength="1500"></textarea>
           </div>
           <div class="hp" aria-hidden="true">
             <label for="f-website">اترك هذا الحقل فارغًا</label>

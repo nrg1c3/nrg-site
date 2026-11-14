@@ -39,7 +39,7 @@
   var T = ar ? {
     sending: 'جارٍ الإرسال…',
     ok: 'تم استلام رسالتك، شكرًا لك. سنتواصل معك.',
-    name: 'من فضلك اكتب اسمك.',
+    name: 'من فضلك اكتب اسمك (حرفان على الأقل).',
     phone: 'من فضلك اكتب رقم موبايل صحيح.',
     type: 'من فضلك اختر نوع الطلب.',
     consent: 'من فضلك وافق على استخدام اسمك ورقمك للرد عليك.',
@@ -48,7 +48,7 @@
   } : {
     sending: 'Sending…',
     ok: 'Thanks — we received your message and will get back to you.',
-    name: 'Please enter your name.',
+    name: 'Please enter your name (at least 2 letters).',
     phone: 'Please enter a valid mobile number.',
     type: 'Please choose a request type.',
     consent: 'Please agree to us using your name and number to reply.',
@@ -69,7 +69,7 @@
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var f = form.elements;
-    if (!f.name.value.trim()) { say(T.name, 'err'); f.name.focus(); return; }
+    if (f.name.value.trim().length < 2) { say(T.name, 'err'); f.name.focus(); return; }
     if (!f.phone.checkValidity()) { say(T.phone, 'err'); f.phone.focus(); return; }
     if (!f.type.value) { say(T.type, 'err'); f.type.focus(); return; }
     if (!f.consent.checked) { say(T.consent, 'err'); f.consent.focus(); return; }
