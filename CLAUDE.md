@@ -40,6 +40,7 @@
 ## التصميم
 - **موبايل الأول**: الـ CSS الأساسي للموبايل (≈360px) و`min-width` media queries للأكبر.
 - شكل تقني احترافي؛ الهوية البصرية في `assets/css/tokens.css` (ألوان، خطوط، مسافات) — ما تستخدمش ألوان أو قيم خارجها.
+- **الهوية: «Code Spark»** (اعتمدها المستخدم 14 نوفمبر 2026، **وبتلغي ألوان BRIEF**): علامة ‹•› في `assets/img/nrg-mark.svg` + كلمة NRG + «NEW RISING GENERATION». الألوان: Midnight Navy #0B1B2B · Sunrise Orange #F26B1D · Amber #FFB347 · Paper #F7F5F0 · Slate #5B6B7A (Slate للزخرفة بس، تباينه ضعيف على الكحلي). الاسم الإنجليزي الكامل: NRG — New Rising Generation.
 - الهوية المعتمدة داكنة بس؛ ما تضيفش وضع فاتح إلا لو اتعتمدت ألوانه.
 - الخطوط: Cairo (عناوين 700/800) + IBM Plex Sans Arabic (نص 400/600)، للنسختين.
 - إتاحة: تباين AA على الأقل، `alt` لكل صورة، تنقل بالكيبورد، `prefers-reduced-motion`، أحجام لمس ≥ 48px (حسب `docs/A11Y-CHECKLIST.md`). (مهم خصوصًا عشان بَدَالَك موجه للصم.)
